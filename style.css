@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #8bb3e0;
+}
+
+header {
+  background-color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  height: 40px;
+  margin-right: 15px;
+}
+
+header h1 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  min-height: calc(100vh - 60px);
+}
+
+.login-box {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 30px;
+  max-width: 800px;
+  width: 100%;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.login-form {
+  flex: 1 1 250px;
+  min-width: 250px;
+  padding: 10px;
+}
+
+.login-form h2 {
+  margin-bottom: 6px;
+  color: #155e75;
+  font-size: 22px;
+}
+
+.login-form p {
+  margin-bottom: 20px;
+  color: #666;
+  font-size: 14px;
+}
+
+.login-form input,
+.login-form select {
+  width: 100%;
+  padding: 10px 14px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.08);
+  font-size: 15px;
+}
+
+.login-form button {
+  background-color: #1d1466;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 18px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+  box-shadow: 2px 3px 5px rgba(0,0,0,0.25);
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #000c53;
+}
+
+.login-image {
+  flex: 0 0 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-image img {
+  width: 100%;
+  height: 100%;
+  max-height: 420px;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border: 4px solid white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-image img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}

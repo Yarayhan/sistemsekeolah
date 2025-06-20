@@ -1,0 +1,122 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #ffffff;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  height: 48px;
+}
+
+header h1 {
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #6b7280;
+  font-weight: bold;
+  padding-bottom: 4px;
+}
+
+nav a:hover,
+nav a.active {
+  color: #1d4ed8;
+  border-bottom: 2px solid #1d4ed8;
+}
+
+main {
+  padding: 30px 40px;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #1f2937;
+}
+
+.announcement-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.announcement-card {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  gap: 20px;
+}
+
+.announcement-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.announcement-card h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #111827;
+}
+
+.announcement-card p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.announcement-card button {
+  margin-left: auto;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.announcement-card button:hover {
+  background-color: #1d4ed8;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .announcement-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .announcement-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .announcement-card button {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - SMKS Hangtuah 1 Jakarta</title>
+  <link rel="stylesheet" href="/index/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<header>
+  <img src="/asset/image/logo.png" alt="Logo Sekolah">
+  <h1>SMKS HANGTUAH 1 JAKARTA</h1>
+</header>
+
+<div class="login-container">
+  <div class="login-box">
+    <div class="login-form">
+      <h2>Welcome</h2>
+      <p>Website Smks Hangtuah 1 Jakarta</p>
+      <input type="text" id="username" placeholder="Username" />
+      <input type="password" id="password" placeholder="Password" />
+      <select id="role">
+        <option value="">Role</option>
+        <option value="siswa">Siswa</option>
+        <option value="guru">Guru</option>
+        <option value="admin">Admin</option>
+      </select>
+      <button onclick="login()">Login</button>
+    </div>
+    <div class="login-image">
+      <img src="/asset/image/hh.jpg" alt="Foto Lapangan Sekolah">
+    </div>
+  </div>
+</div>
+
+<script>
+  function login() {
+    const role = document.getElementById("role").value;
+
+    if (role === "admin") {
+      window.location.href = "admin.html";
+    } else if (role === "guru") {
+      window.location.href = "#";
+    } else if (role === "siswa") {
+      alert("Login sebagai siswa berhasil (halaman siswa belum dibuat).");
+    } else {
+      alert("Silakan pilih role terlebih dahulu.");
+    }
+  }
+</script>
+
+</body>
+</html>
